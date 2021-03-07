@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Clouds</title>
+	<link rel="stylesheet" href="https://use.typekit.net/nks0pfc.css">
+	<link rel="stylesheet" href="https://use.typekit.net/nks0pfc.css">
+
+
+<style>
+	* {
+		box-sizing:border-box;
+	}
+	body {
+		background-image: url("images/background.jpg");
+	}
+	.header {
+		padding:20px;
+		text-align:center;
+		background:#1abc9c;
+		color:white;
+		font-family: blow-up, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+		font-size:200px
+	}
+	/*style the top navigation bar*/
+	.navbar {
+		display:flex;
+		background-color:darkslategray;
+	}
+	/*style the navigation bar links*/
+	.navbar a {
+		color:lightblue;
+		padding:14px 20px;
+		text-decoration:none;
+		text-align:center;
+		font-family: carlmarx, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+		font-size:50px;
+	}
+	/*changer color on hover*/
+	.navbar a:hover {
+		background-color:yellow;
+		color:black;
+	}
+	/*column container*/
+	.row {
+		display:flex;
+		flex-wrap:wrap;
+	}
+	/*create two unequal columns that sits next to each other */
+	/*sidebar/left column*/
+	.side {
+		flex:30%;
+		background-color:#flflfl;
+		padding:20px;
+		color:darkslateblue;
+	}
+	/*main column*/
+	.main {
+		flex:70%;
+		background-color:white;
+		padding:20px;
+		text-align:center;
+		color:darkslategray;
+	}
+	.footer {
+		padding:20px;
+		text-align:center;
+		background:#ddd;
+	}
+	@media screen and (max-width:700px)
+	{
+		.row, .navbar {
+			flex-direction:column;
+		}
+	}
+	
+	</style>
+</head>
+<body>
+	
+<div
+style="font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif';font-size:50px;color:gray;padding:5px">
+	<h4 style="text-align:center">Clouds</h4>
+</div>
+<div class="header">
+	<h1>Clouds</h1>
+	<p>So Very <b>Fluffy</b>!</p>
+</div>
+<div class="navbar">
+	<a href="https://en.wikipedia.org/wiki/Cumulus_cloud">Cumulus</a>
+	<a href="https://en.wikipedia.org/wiki/Cirrus_cloud">Cirrus</a>
+	<a href="https://en.wikipedia.org/wiki/Stratus_cloud">Stratus</a>
+	<a href="https://en.wikipedia.org/wiki/Nimbostratus_cloud">Nimbus</a>
+	<a href="#video">The Everlasting Storm</a>
+	</div>
+<div class="row">
+	<div class="side">
+	<h2>info about clouds</h2>
+	<h5>image of a cumulus cloud</h5>
+	<div><img src="images/cumulus.png" width="250" height="150" alt="cumulus cloud"></div>
+	<p>Cumulus clouds are puffy clouds that sometimes look like pieces of floating cotton. The base of each cloud is often flat and may be only 1000 meters (3300 feet) above the ground. The top of the cloud has rounded towers.</p>
+	<h3>Stratus clouds</h3>
+	<p>Stratus clouds are low-level clouds characterized by horizontal layering with a uniform base, as opposed to convective or cumuliform clouds that are formed by rising thermals.</p>
+	<div><img src="images/stratus.png" width="250" height="150" alt="stratus cloud"></div><br>
+		<p>Cumulonimbus clouds are where the big storms come from.</p>
+	<div><img src="images/cumulonimbus.png" width="250" height="150" alt="cumulonimbus clouds"></div><br>
+		
+	</div>
+	<div class="main">
+	<h2>So Many Clouds!</h2>
+	<h5 style="color:lightblue;border:dotted;text-align:center;">What different clouds are there?</h5>
+	<div><img src="images/cloudinfo.png" width="300" height="200" alt="different types of clouds"></div>
+	<p>Imagine looking up at the sky and seeing so many different cloud shapes.</p>
+	<p>Most people don't take the time to consider what each one is and what they mean about the weather. Each different type of cloud indicates the weather and seson.</p>
+	<h5 style="color:lightblue;border:dotted;text-align:center;">Cumulus, Cirrus, Stratus, and Nimbus</h5>
+	<br>
+	<div><img src="images/alldifclouds.png" width="350" height="250" alt="all four clouds"></div>
+	<h2>Big Clouds or Little Clouds?</h2>
+	<h5>Small and wispy means it is cold</h5>
+	<div><img src="images/cirrus.png" width="650" height="450" alt="Mare's Tails"></div>
+	<h5>Big and fluffy often means warmth and moisture</h5>
+	<p>Sometimes we see the big fluffy clouds and think there might be rain coming.If you see the anvil shape though, that means a thunderstorm is coming!</p>
+	<div><img src="images/anvilcloud.png" width="650" height="450" alt="Thunderstorm!"></div>
+	</div>
+	<div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/4DH8LAa-caA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <h3 id="video">A Video of a Lightning Storm</h3>
+	</div>
+	</div>
+	
+	<div class="footer">
+	<h2>What is your favorite type of cloud?</h2>
+		<form action="">
+		<label for="choice">Your Choice</label>
+		<input type="text" id="choice">
+		<br>
+		<button type="submit">submit</button>
+		</form>
+	</div>
+</body>
+</html>
